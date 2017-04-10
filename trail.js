@@ -73,6 +73,8 @@ eat(traveler2); // juan is hungry
 join(wagon, traveler);
 join(wagon, traveler2);
 
+console.log(wagon);
+
 console.log(quarantine(wagon)); // print true if someone is sick, false otherwise
 console.log(food(wagon)); // print juan's food + henrietta's food
 
