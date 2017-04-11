@@ -44,12 +44,15 @@ function join(wagon, travelername) {
 }
 
 function quarantine(wagon) {
-    if (wagon.passengerList.isHealthy === false) {
+    for (i = 0; i < wagon.passengerList.length; i++) {
+        if (wagon.passengerList[i].isHealthy === false) {
         return true
     } else {
-        return false
+        return 'everyone is healthy'
+    }
     }
 }
+
 
 function food(wagon) {
     let totalwagonfood = 0;
